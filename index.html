@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>PawPalace | Adopt love, care forever.</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav nav--tours">
+        <a href="#" class="nav__el">All Pets</a>
+        <form class="nav__search">
+          <button class="nav__search-btn">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+          <input
+            type="text"
+            placeholder="Search Pets"
+            class="nav__search-input"
+          />
+        </form>
+      </nav>
+      <div class="header__logo">
+        <img src="img/Header.png" alt="Paw Palace logo" />
+      </div>
+      <nav class="nav nav--user">
+        <a href="#" class="nav__el">My Profile</a>
+        <a href="#" class="nav__el">
+          <img src="img/profile.png" alt="User photo" class="nav__user-img" />
+          <span>User</span>
+        </a>
+
+        <!-- <button class="nav__el">Log in</button>
+        <button class="nav__el nav__el--cta">Sign up</button> -->
+      </nav>
+    </header>
+
+    <!-- In video, this <main> element is wrongly called: <section class="overview">. So in pug template, please use main.main instead of section.overview -->
+    <main class="main">
+      <div class="card-container">
+        <div class="card">
+          <div class="card__header">
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img src="img/pet1.png" alt="Tour 1" class="card__picture-img" />
+            </div>
+
+            <h3 class="heading-tertirary">
+              <span>Max</span>
+            </h3>
+          </div>
+
+          <div class="card__details">
+            <p class="card__text">
+              A friendly and loyal companion who loves outdoor adventures and
+              fetching games.
+            </p>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-map-pin"></use>
+              </svg>
+              <span>Golden Retriever</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-calendar"></use>
+              </svg>
+              <span>Male</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-flag"></use>
+              </svg>
+              <span>2 Years</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-user"></use>
+              </svg>
+              <span>Golden</span>
+            </div>
+          </div>
+
+          <div class="card__footer">
+            <p>
+              <span class="card__footer-text">Adoption Fee :</span>
+              <span class="card__footer-value">$297</span>
+            </p>
+
+            <a href="#" class="btn btn--green btn--small">Adopt</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img src="img/pet2.png" alt="Tour 1" class="card__picture-img" />
+            </div>
+
+            <h3 class="heading-tertirary">
+              <span>Bella</span>
+            </h3>
+          </div>
+
+          <div class="card__details">
+            <p class="card__text">
+              A calm and affectionate pup with a heart of gold and a love for
+              naps.
+            </p>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-map-pin"></use>
+              </svg>
+              <span>Bulldog</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-calendar"></use>
+              </svg>
+              <span>Female</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-flag"></use>
+              </svg>
+              <span>1.5 Year</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-user"></use>
+              </svg>
+              <span>Fawn</span>
+            </div>
+          </div>
+
+          <div class="card__footer">
+            <p>
+              <span class="card__footer-text">Adoption Fee :</span>
+              <span class="card__footer-value">$497</span>
+            </p>
+
+            <a href="#" class="btn btn--green btn--small">Adopt</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img src="img/pet3.png" alt="Tour 1" class="card__picture-img" />
+            </div>
+
+            <h3 class="heading-tertirary">
+              <span>Luna</span>
+            </h3>
+          </div>
+
+          <div class="card__details">
+            <p class="card__text">
+              An energetic and curious explorer with a nose for fun and lots of
+              love to give.
+            </p>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-map-pin"></use>
+              </svg>
+              <span>Beagle</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-calendar"></use>
+              </svg>
+              <span>Male</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-flag"></use>
+              </svg>
+              <span>6 Months</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-user"></use>
+              </svg>
+              <span>Brown</span>
+            </div>
+          </div>
+
+          <div class="card__footer">
+            <p>
+              <span class="card__footer-text">Adoption Fee :</span>
+              <span class="card__footer-value">$697</span>
+            </p>
+
+            <a href="#" class="btn btn--green btn--small">Adopt</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img src="img/pet4.png" alt="Tour 1" class="card__picture-img" />
+            </div>
+
+            <h3 class="heading-tertirary">
+              <span>Charlie</span>
+            </h3>
+          </div>
+
+          <div class="card__details">
+            <p class="card__text">
+              A smart and playful friend who enjoys learning new tricks and
+              cuddling.
+            </p>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-map-pin"></use>
+              </svg>
+              <span>Poddle</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-calendar"></use>
+              </svg>
+              <span>Female</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-flag"></use>
+              </svg>
+              <span>8 Months</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-user"></use>
+              </svg>
+              <span>Black</span>
+            </div>
+          </div>
+
+          <div class="card__footer">
+            <p>
+              <span class="card__footer-text">Adoption Fee :</span>
+              <span class="card__footer-value">$997</span>
+            </p>
+
+            <a href="#" class="btn btn--green btn--small">Adopt</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img src="img/pet5.png" alt="Tour 1" class="card__picture-img" />
+            </div>
+
+            <h3 class="heading-tertirary">
+              <span>Rocky</span>
+            </h3>
+          </div>
+
+          <div class="card__details">
+            <p class="card__text">
+              A brave and protective guardian, perfect for an active home.
+            </p>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-map-pin"></use>
+              </svg>
+              <span>German Shephard</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-calendar"></use>
+              </svg>
+              <span>Male</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-flag"></use>
+              </svg>
+              <span>13 Months</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-user"></use>
+              </svg>
+              <span>Black & Brown</span>
+            </div>
+          </div>
+
+          <div class="card__footer">
+            <p>
+              <span class="card__footer-text">Adoption Fee :</span>
+              <span class="card__footer-value">$1,497</span>
+            </p>
+
+            <a href="/tour.html" class="btn btn--green btn--small">Adopt</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img src="img/pet6.png" alt="Tour 1" class="card__picture-img" />
+            </div>
+
+            <h3 class="heading-tertirary">
+              <span>Milo</span>
+            </h3>
+          </div>
+
+          <div class="card__details">
+            <p class="card__text">
+              A talkative and social kitty with striking blue eyes and a curious
+              personality.
+            </p>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-map-pin"></use>
+              </svg>
+              <span>Siamese Cat</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-calendar"></use>
+              </svg>
+              <span>Female</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-flag"></use>
+              </svg>
+              <span>4 Months</span>
+            </div>
+            <div class="card__data">
+              <svg class="card__icon">
+                <use xlink:href="img/icons.svg#icon-user"></use>
+              </svg>
+              <span>Canva</span>
+            </div>
+          </div>
+
+          <div class="card__footer">
+            <p>
+              <span class="card__footer-text">Adoption Fee :</span>
+              <span class="card__footer-value">$1,997</span>
+            </p>
+            <a href="#" class="btn btn--green btn--small">Adopt</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <div class="footer__logo">
+        <img src="img/Header.png" alt="Natours logo" />
+      </div>
+      <ul class="footer__nav">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Download apps</a></li>
+        <li><a href="#">Pet Care</a></li>
+        <li><a href="#">Adopt Now</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p class="footer__copyright">
+        &copy; by Prem Kumar. All rights reserved.
+      </p>
+    </div>
+  </body>
+</html>
